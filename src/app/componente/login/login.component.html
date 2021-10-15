@@ -1,0 +1,31 @@
+<div class="container login-container">
+  <div class="login-form-2">
+    <h3>Login</h3>
+    <form #loginValidate="ngForm">
+      <div class="form-group">
+        <label>Login:</label>
+        <input type="text" #iptLogin="ngModel" [(ngModel)]="usuario.login" id="login" name="login" class="form-control"
+          placeholder="Seu login" required />
+        <div *ngIf="iptLogin.invalid" class="invalid">
+          Campo Obrigatório!
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Senha:</label>
+        <input type="password" #iptSenha="ngModel" [(ngModel)]="usuario.senha" id="senha" name="senha"
+          class="form-control" placeholder="Sua senha" required />
+        <div *ngIf="iptSenha.invalid" class="invalid">Campo Obrigatório!</div>
+      </div>
+      <div class="form-group btnlogin">
+        <input type="submit" class="btnSubmit" id="btnSubmitc" value="Cadastre-se" [routerLink]="['/cadastrarUsuario']" />
+        <input type="submit" class="btnSubmit" [disabled]="loginValidate.invalid" value="Login" (click)="login()" />
+      </div>
+      <div class="row justify-content-center">
+        <a href="" class="ForgetPwd" value="Login">Forget Password?</a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <label class="msg-alerta">{{msg}}</label>
+      </div>
+    </form>
+  </div>
+</div>

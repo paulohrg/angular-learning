@@ -1,0 +1,80 @@
+  .login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .login-form-2 {
+    padding: 2%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    max-width: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+    min-width: 50%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .login-form-2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      min-width: 88%;
+    }
+  }
+
+
+  .login-form-2 h3 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .login-container form {
+    padding: 1% 5%;
+  }
+
+  .btnSubmit {
+    width: 30%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+  }
+
+  #btnSubmitc {
+    min-width: 100px;
+  }
+
+  .login-form-2 .btnSubmit {
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+    margin: 2% 6%;
+  }
+
+  .login-form-2 .ForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .form-group label {
+    color: #fff;
+  }
+
+  .obrigatorio {
+    color: #F76A6A !important;
+  }
+
+  .btnlogin {
+    text-align: center;
+  }
+
+  .invalid {
+    color: #F76A6A;
+  }
+
+  .msg-alerta {
+    text-align: center;
+    margin-top: 10px;
+    color: #F76A6A;
+  }

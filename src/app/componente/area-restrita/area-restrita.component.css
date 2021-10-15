@@ -1,0 +1,11 @@
+.card {
+	width: 250px !important;
+	height: 150px !important;
+}
+.card-body{
+	margin-top: 15%;
+}
+.container{
+	margin-top: 15%;
+}
+

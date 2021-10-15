@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-collapse bc-tema" id="mainNav">
+  <div>
+    <a href="home"><img src="../assets/logo.webp" alt=""></a>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item criarAnuncio"><button [routerLink]="['/criarAnuncio']" class="criarAnuncio">Criar anuncio</button></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['/home']"
+          routerLinkActive="router-link-active">Anuncios</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['/areaRestrita']" routerLinkActive="router-link-active"
+          [hidden]="validarMenu()">Minha Conta</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['/usuarioList']" routerLinkActive="router-link-active"
+          [hidden]="validarMenu()">Gerenciar Usuarios</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" [hidden]="!validarMenu()">Login</a></li>
+      <li class="nav-item"><a class="nav-link" (click)="sair()" style="cursor: pointer;" [hidden]="validarMenu()">Sair</a></li>
+    </ul>
+  </div>
+  <div class="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
